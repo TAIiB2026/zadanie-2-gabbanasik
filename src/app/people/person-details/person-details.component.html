@@ -1,0 +1,10 @@
+<div *ngIf="osoba">
+    <h2>Szczegóły osoby: {{ osoba.firstName }} {{ osoba.lastName }}</h2>
+    <p><strong>ID:</strong> {{ osoba.id }}</p>
+    <p><strong>Imię:</strong> {{ osoba.firstName }}</p>
+    <p><strong>Nazwisko:</strong> {{ osoba.lastName }}</p>
+    <p><strong>Wzrost:</strong> {{ osoba.height | currency:'PLN' }}</p>
+    <p><strong>Data urodzenia:</strong> {{ osoba.birthDate | date:'fullDate' }}</p>
+    
+    <button routerLink="/lista">Powrót do listy</button>
+  </div>
